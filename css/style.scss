@@ -1,0 +1,149 @@
+body {
+  // Navbar
+  nav {
+    .container {
+      ul.navbar-nav {
+        li.nav-item {
+          padding: 10px 15px;
+          font-weight: 700;
+
+          a.nav-link:hover {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    // Header //
+
+    .container-fluid.header {
+      background-image: url(/img/header.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 35rem;
+      display: flex;
+      align-items: center;
+
+      .text {
+        margin-left: 10px;
+        max-width: 20rem;
+
+        h1 {
+          color: white;
+          padding-bottom: 10px;
+        }
+
+        p {
+          padding-top: 10px;
+          max-width: 100%;
+          color: white;
+          font-size: 20px;
+          letter-spacing: 2px;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    // Main-Content //
+
+    .container {
+      min-height: 200px;
+      margin-top: 20px;
+      .row {
+        .col-md-6 {
+          min-height: 22rem;
+        }
+
+        .my-col1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .photo {
+            background-color: rgb(151, 146, 146);
+            width: 80%;
+            height: 90%;
+          }
+        }
+
+        .my-col2 {
+          .text {
+            max-width: 21rem;
+
+            h1 {
+              font-weight: 400;
+            }
+            // Information about service //
+            p {
+              width: 100%;
+              font-size: 20px;
+              font-weight: 600;
+            }
+
+            // Price and more Information Button //
+            .about {
+              width: 100%;
+              height: 70px;
+              display: flex;
+              justify-content: space-between;
+
+              .price {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-weight: 700;
+              }
+
+              .button {
+                align-self: flex-end;
+
+                a {
+                  text-decoration: none;
+                  border-radius: 10px;
+                  padding: 10px 50px;
+                  background-color: rgb(94, 179, 94);
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    // Footer //
+    .container-fluid.footer {
+      background-image: url(/img/footer.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 10rem;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: white;
+        }
+      }
+
+      .social {
+        margin-top: 10px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
